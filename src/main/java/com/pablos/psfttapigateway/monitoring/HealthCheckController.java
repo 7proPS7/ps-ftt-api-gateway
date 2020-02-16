@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HealthCheckController {
 
-    @Value("${ftt.application.name}")
+    @Value("${spring.application.name}")
     private String applicationName;
 
     @RequestMapping("/health")
